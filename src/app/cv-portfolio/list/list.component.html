@@ -1,0 +1,6 @@
+<div *ngFor="let item of items">
+  <h3>{{ item.title }}</h3>
+  <p>{{ item.description }}</p>
+  <button (click)="delete(item.id)">Eliminar</button>
+  <button (click)="edit(item)">Editar</button>
+</div>

@@ -1,0 +1,12 @@
+<form>
+  <label>Título:</label>
+  <input [(ngModel)]="item.title" name="title" />
+
+  <label>Descripción:</label>
+  <textarea [(ngModel)]="item.description" name="description"></textarea>
+
+  <label>Fecha:</label>
+  <input type="date" [(ngModel)]="item.date" name="date" />
+
+  <button (click)="save()">Guardar</button>
+</form>
